@@ -1,0 +1,26 @@
+{
+  "name": "ex4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "service1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"npm run server2\" \"npm run server1\"",
+    "server1": "node service1.js",
+    "server2": "node service2.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ermyas7/docker-compose-ex4.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ermyas7/docker-compose-ex4/issues"
+  },
+  "homepage": "https://github.com/ermyas7/docker-compose-ex4#readme",
+  "dependencies": {
+    "concurrently": "^6.2.2"
+  }
+}
