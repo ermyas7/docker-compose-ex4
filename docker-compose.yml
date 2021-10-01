@@ -1,0 +1,17 @@
+version: "3"
+services:
+  server1:
+    container_name: service-1
+    build: service-1
+    ports:
+      - "8001:8001"
+    restart: always
+    command: npm start 
+  server2:
+    container_name: service-2
+    build: service-2
+    restart: always  
+    volumes:
+      - ./service-2:/usr/src/app    
+    command: npm start  
+  
